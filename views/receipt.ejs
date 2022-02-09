@@ -1,0 +1,44 @@
+<l<!DOCTYPE html>
+    <html>
+    
+    <head>
+        <title>Icecream Shop</title>
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+    </head>
+    
+    <body>
+        <div class="cover">
+            <img class="logo" src="images/logo.png">
+        </div>
+
+        <main> 
+            <section id = "receipt">
+                <h3>Thank you for your purchase, your reciept is ready</h3>
+                <div class="Info">Name: <%= fname %> </br></br>
+                Email: <%= email %> </br></br>
+                Phone Number: <%= phone%></br></br>
+                Address: <%= address +" " + city+" "+ province+ " , "+ postcode %></div> </br></br>
+            
+                <div class = "payable">
+                    
+                <% if(vanilla  != "0"){ %> <%= vanilla %> Vanilla Ice cream: @ $10.00...................$<%= vanillaCount.toFixed(2) %></br></br> <%}%> 
+                <% if(choclate != "0"){ %> <%= choclate %> Choclate Ice cream: @ $20.00.............$<%= choclateCount.toFixed(2) %> </br></br><%} %>
+                <% if(coffee  != "0"){ %> <%= coffee %> Coffee Ice cream: @ $30.00...................$<%= coffeeCount.toFixed(2)%> </br></br><%}%>
+                
+                Shipping Charge:...................................... $<%= shippingCharge.toFixed(2) %></br></br>
+                Subtotal:.................................................. $<%= subtotal.toFixed(2) %></br></br>
+                Taxes: @ %<%= taxRate %> ............................................$<%= subtotalTax.toFixed(2) %></br></br>
+                Deliverytime:<%= delivarytime%>..........................................$<%= delivaryRate.toFixed(2) %></br></br>
+                Total:.........................................................$<%=total.toFixed(2)%>
+                </div>
+                    
+            </section>
+        </main>
+
+        <footer>
+            &copy; Copyright 2021 - Rose Mansouri
+        </footer>
+        <a href="javascript:history.back()">Go Back</a>
+</body>
+
+</html>

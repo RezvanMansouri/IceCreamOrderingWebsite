@@ -1,0 +1,109 @@
+
+form {
+	background-color:rgb(230 236 250 / 71%);
+	border: 2px solid black;
+	width: fit-content;
+	padding: 60px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+h2 {
+	text-align: center;
+	text-decoration: steelblue;
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}    
+
+legend {
+	font-weight: bold;}
+ 
+#receipt{
+	background-color: rgb(230 236 250 / 71%);
+	border: 2px solid black;
+	width: fit-content;
+	padding: 40px;
+
+	margin: auto;
+	font-family:Arial, Helvetica, sans-serif;
+	
+	}
+	#receipt.h3{font-weight: bold;}	
+	
+	body {
+	  background-image: url('../images/icecream.jpg');
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  background-attachment: fixed;
+	  color: rgb(7, 7, 7);
+	  font-family: 'Nunito', sans-serif;
+	}
+	.logo {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width:200px;
+		padding: 2px;
+	
+	}
+	footer{
+		font-weight: bold;
+	font-size: 15px;
+	text-align: center;
+	padding-top: 10px;
+	}
+	.cover{
+		border-bottom: 3px solid #da670a;
+	}
+	.formfield input{
+		width: 50%;
+		display: block;
+		float: right;
+		height: 20px;
+	}
+	.formfield label{
+		font-family:Arial, Helvetica, sans-serif;
+		font-weight: bold;
+		font-size: 15px;
+	}
+	input.submit{
+		background-color: rgba(174, 231, 120, 0.884);
+		font-weight: bold;
+		width: 100%;
+		float: none;
+	}
+	select.field
+	{
+		width: 52.5%;
+		float: right;
+		height: 25px;
+	}
+	table {
+		border-collapse: collapse;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	table, th, td {
+		border: 1px solid black;
+
+	}
+	td {
+		padding: 10px 5px;
+		border-width:3px;
+		text-align: left;
+		background-color: rgba(170, 216, 243, 0.61);
+		font-size:13px;
+	}
+	th {
+		background-color: rgba(99, 184, 241, 0.438);
+		text-align: left;
+		border-width:3px;
+		font-size:14px;
+		padding:10px 5px;
+	}
+
+
+	
+	
+	

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Icecream Shop</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+
+<body>
+    <div class="cover">
+        <img class="logo" src="images/logo1.jpg">
+    </div>
+    <main>
+        <section class="forms">
+            <h2>ICE CREAM SHOP</h2>
+            <form method="POST" action="/">
+                <div class="formfield">
+                <legend>Fill the form to order:</legend><br>
+                <label for="fname">Name*:</label>
+                <input type="text" name="fname" value="<%= fname%>"> <br><br>
+                <label for="email">Email*:</label>
+                <input type="text" name="email" value="<%= email%>"><br><br>
+                <label for="phone">Phone:</label>
+                <input type="text" name="phone" placeholder="xxxxxxxxxx" value="<%= phone%>"></input><br><br>
+                <label for="address">Address*:</label>
+                <input type="text" name="address" value="<%= address%>"><br><br>
+                <label for="city">City*:</label>
+                <input type="text" name="city" value="<%= city%>"><br><br>
+                <label for="postcode">Postal Code:</label>
+                <input type="text" name="postcode" placeholder="X9X X9X" value="<%= postcode%>"><br><br>
+                <label for="province">Province*:</label>
+            
+                <select name="province" class = "field">
+                    <option value="Alberta">Alberta</option>
+                    <option value="British Columbia">British Columbia</option>
+                    <option value="Manitoba">Manitoba</option>
+                    <option value="New Brunswick">New Brunswick</option>
+                    <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+                    <option value="Northwest Territories">Northwest Territories</option>
+                    <option value="Nova Scotia">Nova Scotia</option>
+                    <option value="Nunavut">Nunavut</option>
+                    <option value="Ontario">Ontario</option>
+                    <option value="Prince Edward Island">Prince Edward Island</option>
+                    <option value="Quebec">Quebec</option>
+                    <option value="Saskatchewan">Saskatchewan</option>
+                    <option value="Yukon">Yukon</option>
+                </select><br><br>
+            </div>
+            <div class="formfield">
+                <label for="vanilla">Vanilla Icecream:</label>
+                <input type="text" name="vanilla" placeholder="$10.00"><br><br>
+                <label for="choclate">Choclate Icecream:</label>
+                <input type="text" name="choclate" placeholder="$20.00"><br><br>
+                <label for="coffee">Coffee Icecream:</label>
+                <input type="text" name="coffee" placeholder="$30.00" ><br><br>
+                <label for="delivarytime">Delivery Time:</label>
+
+                <select name="delivarytime" class = "field">
+                   
+                    <option value="4 DAYS">4 DAYS</option>
+                    <option value="3 DAYS">3 DAYS</option>
+                    <option value="2 DAYS">2 DAYS</option>
+                    <option value="1 DAY">1 DAY</option>
+                </select><br><br>
+            </div>
+                <div>
+                    <input type="submit" value="Place Order" class = "submit" >
+                   
+                </div>
+                <div>
+                    <p><a href="/allreceipts"> Show All the Receipts</a></p>
+                </div>
+            </form>
+
+
+            <% if(typeof errors !=='undefined' )
+             { for(var error of errors){ %>
+                <h3>
+                    <%= error.msg%>
+                </h3>
+                <% }
+             }
+              if ( typeof quantityerror !=='undefined' ){ %>
+                    <h3>
+                        <%= quantityerror%>
+                    </h3>
+                    <% } %>
+
+        </section>
+    </main>
+    
+	<footer>
+		&copy; Copyright 2021 - Rose Mansouri
+	</footer>
+
+</body>
+
+</html>

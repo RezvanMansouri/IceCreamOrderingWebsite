@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Icecream Shop</title>
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+    </head>
+    
+    <body>
+        <div class="cover">
+            <img class="logo" src="images/logo.png">
+        </div>
+
+
+<body>
+    <h1>Receipts</h1>
+    <table>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>Province</th>
+                <th>Postal code </th>
+                <th>Deliverytime   </th>
+                <th>Subtotal  </th>
+                <th>SubtotalTax   </th>
+                <th>Total</th>
+            </tr>
+
+            <% for( var item of allreceipts){ %>
+                <tr>
+                    <td>
+                        <%= item.fname%>
+                    </td>
+                    <td>
+                        <%= item.email%>
+                    </td>
+                    <td>
+                        <%= item.phone%>
+                    </td>
+                    <td>
+                        <%= item.address%>
+                    </td> <br>
+                    <td>
+                        <%= item.city%>
+                    </td>
+                    <td>
+                        <%= item.province%>
+                    </td>
+                    <td>
+                        <%= item.postcode%>
+                    </td>
+                    <td>
+                        <%= item.delivarytime%>
+                    </td>
+                    <td>
+                        $<%= item.subtotal.toFixed(2)%>
+                    </td>
+                    <td>
+                        $<%= item.subtotalTax.toFixed(2)%>
+                    </td>
+                    <td>
+                        $<%= item.total.toFixed(2)%>
+                    </td>
+
+                </tr>
+                <% } %>
+    </table>
+    <a href="javascript:history.back()">Go Back</a>
+</body>
+</html>
